@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+    <script>
+        // function change(color) {
+        //     document.body.style.background = color;
+        // }
+
+        function change(color) {
+            document.bgColor = color;
+        }
+    </script>
+</head>
+<body>
+    <!-- <input type="radio" name="color" onclick="change('red')">빨간색 <br>
+    <input type="radio" name="color" onclick="change('yellow')">노란색 <br>
+    <input type="radio" name="color" onclick="change('blue')">파란색 <br>
+    <input type="radio" name="color" onclick="change('green')">초록색 <br> -->
+
+    <input type="radio" name="bgColor" value="yellow" onclick="change(this.value)">노란색 <br>
+    <input type="radio" name="bgColor" value="red" onclick="change(this.value)">빨간색 <br>
+    <input type="radio" name="bgColor" value="blue" onclick="change(this.value)">파란색 <br>
+    <input type="radio" name="bgColor" value="green" onclick="change(this.value)">초록색 <br>
+</body>
+</html>

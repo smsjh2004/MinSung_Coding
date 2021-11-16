@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeimg</title>
+    <style>
+        img{
+            width: 100px;
+            border: 2px solid white;
+        }
+
+        body{
+            background-image: url("image/풍경사진.jpg");
+            background-size: 100%;
+        }
+    </style>
+
+    <script>
+        function changeBg(bimg) {
+            var body = document.getElementsByTagName("body");
+            body[0].style.backgroundImage = "url(" + bimg + ")";
+        }
+    </script>
+</head>
+<body>
+    <img src="image/풍경사진.jpg" onmouseover="changeBg('image/풍경사진.jpg')">
+    <img src="image/풍경사진2.png" onmouseover="changeBg('image/풍경사진2.png')">
+    <img src="image/풍경사진3.jpg" onmouseover="changeBg('image/풍경사진3.jpg')">
+    <img src="image/풍경사진4.jpg" onmouseover="changeBg('image/풍경사진4.jpg')">
+</body>
+</html>
