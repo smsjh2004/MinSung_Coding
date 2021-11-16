@@ -1,4 +1,4 @@
-# 혼자 공부했던걸 올리고 있습니다
+# Html, Css, Js Study
 **1.HTML**: Hyper Text Markup Language 
 - 메뉴바 만들기
 
