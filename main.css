@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+#navbar{
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    background-color: navy;
+    height: 60px;
+}
+
+#menu{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li{
+    float: left;
+    list-style: none;
+}
+
+#menu li a{
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu li a:hover{
+    background-color: #464545;
+}
