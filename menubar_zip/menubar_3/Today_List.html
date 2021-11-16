@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today_List</title>
+    <link rel="stylesheet" href="Today_List.css">
+</head>
+<body>
+    <h1>Today_List</h1>
+
+    <div id="menu">
+        <a id="home" onclick="clickHome();">Home</a>
+        <a id="work" onclick="clickwork();">Work</a>
+        <a id="school" onclick="clickschool();">School</a>
+      </div>
+
+      <div id="hello">
+        <img id="photo" src="home.jpg" width="500px" height="500px">
+      </div>
+      
+
+      <script>
+        function clickHome() {
+            document.getElementById('photo').src = 'home.jpg';
+            document.getElementById('home').style.fontWeight = 'bold';
+            document.getElementById('work').style.fontWeight = 'normal';
+            document.getElementById('school').style.fontWeight = 'normal';
+        }
+    
+        function clickwork() {
+            document.getElementById('photo').src = 'm2mtech.png';
+            document.getElementById('home').style.fontWeight = 'normal';
+            document.getElementById('work').style.fontWeight = 'bold';
+            document.getElementById('school').style.fontWeight = 'normal';
+        }
+    
+        function clickschool() {
+            document.getElementById('photo').src = 'school.jpg';
+            document.getElementById('home').style.fontWeight = 'normal';
+            document.getElementById('work').style.fontWeight = 'normal';
+            document.getElementById('school').style.fontWeight = 'bold';
+        }
+      </script>
+</body>
+</html>
