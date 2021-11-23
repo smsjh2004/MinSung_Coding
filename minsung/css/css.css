@@ -1,18 +1,73 @@
-#menubar li {
+#main_logo{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+/*상단바 디자인*/
+#main_menubar li {
     float: left;
     margin-left: 20px;
     margin-right: 20px;
     list-style: none;
-    line-height: 60px;
+    line-height: 50px;
 }
 
-#menubar li a{
+#main_menubar li a{
     text-decoration: none;
     color: black;
 }
 
-#menubar li a:hover {
+#main_menubar_github:hover{
+    color: purple;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#main_menubar_blog:hover{
+    color: green;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#main_menubar_youtube:hover{
     color: red;
     transition-duration: .5s;
     cursor: pointer;
 }
+
+#main_menubar_about:hover{
+    color: blue;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+/*우측 상단바*/
+#second_menubar li{
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    line-height: 50px;
+}
+
+#second_menubar li a{
+    text-decoration: none;
+    color: black;
+}
+
+#second_menubar li a:hover {
+    color: orange;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+/* 메인 사진 */
+#hero_header{
+    background-image: url(../images/sample.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+}
+
