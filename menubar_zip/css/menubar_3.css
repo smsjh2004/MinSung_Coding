@@ -1,0 +1,22 @@
+li {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    line-height: 60px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: orange;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+img{
+    float: left;
+}
