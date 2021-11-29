@@ -1,0 +1,49 @@
+a{
+    text-align: center;
+    display: block;
+    font-size: 32px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+  }
+
+.login-form {
+    width: 400px;
+    background-color: #eeeff1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.text-field {
+    font-size: 14px;
+    width: 95%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn {
+    font-size: 14px;
+    background-color: #1f2e4f;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .links {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .links a {
+    font-size: 12px;
+    color: #9b9b9b;
+  }

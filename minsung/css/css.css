@@ -1,3 +1,9 @@
+@media (max-width: 768px){
+    a{
+        font-size: 9px;
+    }
+}
+
 #main_logo{
     float: left;
     width: 200px;
