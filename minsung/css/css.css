@@ -1,7 +1,12 @@
-@media (max-width: 768px){
-    a{
-        font-size: 9px;
+@media (max-width: 600px){
+    body{
+        background-color: yellow;
     }
+}
+
+button{
+    background-color: white;
+    cursor: pointer;
 }
 
 #main_logo{
