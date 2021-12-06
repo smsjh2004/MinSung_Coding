@@ -47,3 +47,7 @@ body {
     font-size: 12px;
     color: #9b9b9b;
   }
+
+  .links a:hover{
+    text-decoration: underline;
+  }
