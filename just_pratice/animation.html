@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>     
+
+    #wrap
+    {
+        background-color: rgb(253, 99, 99);
+    }
+
+    #hd
+    {
+        width: 100%;
+        height: 60px;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 2);
+    }
+
+    #hd .hd
+    {
+        width: 100%;
+        height: 60px;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        border:  1px solid rgba(0, 0, 0, 2);
+        margin: 0 auto;
+    }
+
+    #hd .hd .logo
+    {
+        width: 150px;
+        height: 40px;
+        margin: 10px 0px;
+        background: black;
+    }
+
+    #hd .hd .logo a{text-decoration:none; color: black; margin-top: 0; transition-duration: all .35s;}
+
+    .logo a:hover{text-shadow: 0 3px 3px rgba(0, 0, 0, .2);}
+
+    #hd .hd .menu
+    {
+        width: 35px;
+        height: 30px;
+        margin: 15px 10px;
+        background: black;
+    }
+
+    #pd_menu{display: none;}
+    #pd_menu + label{display:  block; position:  relative; width: 35px; height: 30px;}
+    #pd_menu + label span{width: 35px; height: 2px; display: block; background: black; border-radius: 20px; position: absolute;}
+    #pd_menu + label span:nth-child(1){top: 0;}
+    #pd_menu + label span:nth-child(2){top: 50%; transform: translateY(-50%);}
+    #pd_menu + label span:nth-child(3){bottom: 0;}
+    #pd_menu:checked + label span:nth-child(1) {top: 50%; transform:  translateY(-50%) rotate(45deg);}
+    #pd_menu:checked + label span:nth-child(2) {opacity: 0;}
+    #pd_menu:checked + label span:nth-child(3) {bottom: 50%; transform:  translateY(50%) rotate(-45deg);}
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="hd">
+            <div class="hd">
+                <div class="logo"><a href="#">Logo</a></div>
+                <div class="menu">med</div>
+                    <input type="checkbox" id="pd_menu">
+                    <label for="pd_menu">
+                        <span></span><span></span><span></span>
+                    </label>
+            </div>
+        </div>
+        <div id="main">
+            <div id="head">head</div>
+            <div id="tail">
+                <div class="footer">footer</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
