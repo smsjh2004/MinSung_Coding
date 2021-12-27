@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 탭</title>
+    <style>
+        #navbar{
+            padding: 0 20px;
+            overflow: hidden;
+            height: 60px;
+        }
+
+        #menu {
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li{
+            float: left;
+        }
+
+        #menu li a{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            line-height: 60px;
+            display: block;
+            color: #AEADAD;
+        }
+
+        #menu li a:hover{
+            text-decoration: underline;
+        }
+
+        #logo{
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        #search_main{
+            text-align: center;
+        }
+
+        #search{
+            width: 550px;
+            height: 45px;
+            border-radius: 40px;
+            border: 1px solid #ECE9E9;
+            margin-top: 35px;
+            padding-left: 50px;
+            background-image: url(image/돋보기2.png);
+            background-repeat: no-repeat;
+            background-position: 5px left;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        #img1{
+            margin-top: 13px;
+        }
+
+        #img1:hover{
+            background-color: #E3E0E0;
+            border-radius: 100px;
+            transition: 1.0s;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul id="menu">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">이미지</a></li>
+            <li><a href="#"><img id="img1" src="image/메뉴아이콘.png" width="30px" height="30px"></a></li>
+        </ul>
+    </div>
+
+    <div id="logo">
+        <img src="image/google_logo.png" width="350px">
+    </div>
+    <div id="search_main">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search" placeholder="  Google 검색 또는 URL 입력">
+    </div>
+</body>
+</html>
